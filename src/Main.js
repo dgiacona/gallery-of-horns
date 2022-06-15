@@ -5,16 +5,13 @@ import './Main.css';
 
 class Main extends React.Component {
   render() {
-    let horns = []
-    data.map((horn, idx) => {
-      horns.push(
-        <HornedBeast
-          image_url={horn.image_url}
-          title={horn.title}
-          description={horn.description}
-          key={idx}
-        />
-      )
+    let horns = data.map((horn, idx) => {
+      return <HornedBeast
+        image_url={horn.image_url}
+        title={horn.title}
+        description={horn.description}
+        key={idx}
+      />
     })
     return (
       <main>
