@@ -16,15 +16,18 @@ handleHearts = () => {
   })
 }
 
+handleHeadlineClick = () => {
+  this.props.handleOnShowModal(this.props.title)
+}
+
   render () {
     return (
       <article>
-        <h2>{this.props.title}</h2>
-        <img src={this.props.image_url} alt={this.props.description}
-        title={this.props.title}/>
+        <h2 onClick={this.handleHeadlineClick}>{this.props.title}</h2>
+        <img onClick={this.handleHearts} src={this.props.image_url} alt={this.props.description}
+        title={this.props.title}></img>
         <p>{this.props.description}</p>
         <p>{this.state.hearts} 💜 </p>
-        <p onClick={this.handleHearts}><Button>Favorite</Button></p>
       </article>
     )
   }
