@@ -49,7 +49,7 @@ class App extends React.Component {
 
         <Modal.Body>
           <img 
-          src={this.state.selectedHornImg} alt={this.state.selectedHorn}>  
+          className = 'img-fluid' src={this.state.selectedHornImg} alt={this.state.selectedHorn}>  
           </img>
         </Modal.Body>
         </Modal>
