@@ -17,7 +17,7 @@ handleHearts = () => {
 }
 
 handleHeadlineClick = () => {
-  this.props.handleOnShowModal(this.props.title)
+  this.props.handleOnShowModal(this.props.title, this.props.image_url)
 }
 
   render () {
